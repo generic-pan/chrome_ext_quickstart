@@ -1,0 +1,21 @@
+{
+  "name": "My Extension",
+  "description": "Click on the last button",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "clickLastButton": {
+      "suggested_key": "Ctrl+Shift+S",
+      "description": "Click on the last button"
+    }
+  },
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
